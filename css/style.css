@@ -121,6 +121,9 @@ a{
    .brand{
     max-width: 175px;
    }
+   .nav-btn.mobile{
+    display: none;
+   }
    .brand>img{
     width: 100%;
    }
