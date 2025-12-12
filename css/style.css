@@ -252,7 +252,7 @@ color: var(--peracolor);
  box-shadow: 4px 4px 58px rgba(0, 0, 0, 12%);
  top: 0;
  left: 77.19px;
- background: url(/images/car-loan.svg) no-repeat center/contain;
+ background: url(./images/car-loan.svg) no-repeat center/contain;
 }
 .bannar-img::before{
  content: "";
@@ -263,7 +263,7 @@ color: var(--peracolor);
  box-shadow: 4px 4px 58px rgba(0, 0, 0, 12%);
  right: 82.83px;
  top: 112px;
- background: url(/images/home-loan.svg)no-repeat center/contain;
+ background: url(./images/home-loan.svg)no-repeat center/contain;
 }
 .bannar-img>img{
   width: 100%;
