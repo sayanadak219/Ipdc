@@ -252,7 +252,7 @@ color: var(--peracolor);
  box-shadow: 4px 4px 58px rgba(0, 0, 0, 12%);
  top: 0;
  left: 77.19px;
- background: url(./images/car-loan.svg) no-repeat center/contain;
+ background: url(../images/car-loan.svg) no-repeat center/contain;
 }
 .bannar-img::before{
  content: "";
@@ -263,7 +263,7 @@ color: var(--peracolor);
  box-shadow: 4px 4px 58px rgba(0, 0, 0, 12%);
  right: 82.83px;
  top: 112px;
- background: url(./images/home-loan.svg)no-repeat center/contain;
+ background: url(../images/home-loan.svg)no-repeat center/contain;
 }
 .bannar-img>img{
   width: 100%;
@@ -450,6 +450,11 @@ margin-right: 16px;
 .footer-list-item>ul>li:not(:last-child){
   margin-bottom: 10px;
 }
+.footer-list-item>ul>li:hover{
+  color: var(--themecolor);
+  transition: all .5s linear;
+}
+
 .call-inr{
   display: flex;
   flex-wrap: wrap;
@@ -467,6 +472,35 @@ line-height: 22px;
 text-align: center;
 letter-spacing: 1px;
 color: var(--blackcolor);
+}
+.navbar-toggler{
+  display: none;
+  align-items: center;
+  position: relative;
+}
+.navbar-toggler > span{
+  display: inline-block;
+  height: 3px;
+  width: 30px;
+  background: var(--blackcolor);
+
+}
+.navbar-toggler::after,
+.navbar-toggler::before{
+  content: '';
+  /* width: 30px; */
+  height: 3px;
+  background: var(--blackcolor);
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+.navbar-toggler::before{
+  top: 5px;
+}
+.navbar-toggler::after{
+  top: -5px;
 }
 @media screen and (max-width:1400px) {
     .mobile{
@@ -494,12 +528,12 @@ color: var(--blackcolor);
 }
 
 @media screen and (max-width:992px) {
-  .menu{
-    display: block;
-    margin-left: auto;
-  }
   .collapse{
     display: none;
+  }
+  .navbar-toggler{
+    display: flex;
+    margin-left: auto;
   }
   .desktop{
     display: none;
